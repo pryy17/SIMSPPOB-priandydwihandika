@@ -35,7 +35,7 @@ export default function LoginForm() {
     },
   });
   return (
-    <div className="w-full mx-[13em]">
+    <div className="w-full md:mx-[13em]">
       <form onSubmit={formik.handleSubmit}>
         <FormInput
           placeholder={"masukan email anda"}

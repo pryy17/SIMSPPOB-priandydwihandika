@@ -5,7 +5,7 @@ import logo from "../../../assets/image/Logo.png";
 
 export default function Login() {
   return (
-    <div className="grid grid-cols-12">
+    <div className="grid grid-cols-1 md:grid-cols-12">
       <div className="mt-[20vh] text-center w-full col-span-6">
         <div className="flex w-full justify-center">
           <div>
