@@ -44,7 +44,7 @@ export default function FormOnlyShow({ handleEdited, data, edited }) {
               />
             </div>
           </section>
-          <h1 className="font-medium text-3xl mt-5">Kristanto Wibowo</h1>
+          <h1 className="font-medium text-3xl mt-5">{`${dataUser?.first_name} ${dataUser?.last_name}`}</h1>
           <form onSubmit={formik.handleSubmit}>
             <FormInput
               placeholder={"masukan email anda"}

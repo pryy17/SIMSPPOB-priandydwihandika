@@ -9,14 +9,14 @@ export default function Navbar() {
       <div className="flex justify-center items-center py-5 border-b-2 w-full font-medium">
         <Link
           to="homepage"
-          className="mr-auto ml-[16em] flex justify-center items-center"
+          className="mr-auto md:ml-[16em] flex justify-center items-center"
         >
           <div className="mr-2">
             <img src={logo} className="w-7" alt="logo" />
           </div>
           SIMS PPOB
         </Link>
-        <div className="grid grid-cols-3 w-[30em] mr-28">
+        <div className="grid grid-cols-3 md:w-[30em] md:mr-28">
           <Link to="topup">
             <p className={path === "/topup" ? "text-red-600" : null}>Top Up</p>
           </Link>

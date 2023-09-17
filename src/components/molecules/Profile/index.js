@@ -20,9 +20,9 @@ export default function Profile() {
   }
   return (
     <div>
-      <div className="grid grid-cols-12 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-12 mt-8 overflow-hidden">
         {/* profile */}
-        <div className="grid col-span-5 text-left">
+        <div className="grid md:col-span-5 text-center md:text-left justify-items-center md:justify-items-start">
           <div className="rounded-full overflow-hidden w-20 h-20">
             <img
               className="w-20"
@@ -42,9 +42,9 @@ export default function Profile() {
         </div>
 
         {/* jumlah saldo */}
-        <div className="grid col-span-7 justify-items-end">
+        <div className="grid md:col-span-7 md:justify-items-end mt-9 md:mt-0">
           <div
-            className="flex-col text-left bg-no-repeat min-h-[10.3em] w-[42.1em] px-5 py-6"
+            className="flex-col text-left bg-no-repeat min-h-[10.3em] w-fit md:w-[42.1em] px-5 py-6"
             style={{ backgroundImage: `url(${bgSaldo})` }}
           >
             <p className="text-white font-medium">Saldo anda</p>

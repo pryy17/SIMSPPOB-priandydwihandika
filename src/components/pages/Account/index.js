@@ -133,7 +133,7 @@ export default function Account() {
                 />
               )}
             </div>
-            <div className="absolute right-[18em] bottom-1 rounded-full w-7 h-7 bg-white flex justify-center items-center border-2 cursor-pointer">
+            <div className="absolute md:right-[18em] bottom-1 rounded-full w-7 h-7 bg-white flex justify-center items-center border-2 cursor-pointer">
               <HiPencil className="text-lg" />
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function Account() {
         {filesError && (
           <p className="text-red-600 font-extralight">{filesError}</p>
         )}
-        <h1 className="font-medium text-3xl mt-5">Kristanto Wibowo</h1>
+        <h1 className="font-medium text-3xl mt-5">{`${dataUser?.first_name} ${dataUser?.last_name}`}</h1>
         <form onSubmit={formik.handleSubmit}>
           <FormInput
             placeholder={"masukan email anda"}
