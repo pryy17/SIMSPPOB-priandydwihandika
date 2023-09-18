@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="flex justify-center items-center py-5 border-b-2 w-full font-medium">
         <Link
           to="homepage"
-          className="mr-auto md:ml-[16em] flex justify-center items-center"
+          className="mr-auto md:ml-[10em] flex justify-center items-center"
         >
           <div className="mr-2">
             <img src={logo} className="w-7" alt="logo" />

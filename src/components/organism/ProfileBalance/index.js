@@ -23,14 +23,14 @@ export default function ProfileBalance() {
         })
         .catch((err) => {});
     }
-  }, [tokenJwt]);
+  }, [dispatch, token, tokenJwt]);
   if (!token) {
     return <Navigate to="/login" replace={true} />;
   } else {
     return (
       <div>
         <Navbar />
-        <div className="mx-0 lg:mx-[16em]">
+        <div className="mx-0 lg:mx-[10em]">
           <Profile />
           <Outlet />
         </div>
